@@ -29,20 +29,40 @@ h1 {
   font-size: 4rem;
   margin-bottom: 1.5rem;
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
 
 h2 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
+}
+@media (max-width: 500px) {
+  h2 {
+    font-size: 2rem;
+  }
 }
 
 h3 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
+@media (max-width: 500px) {
+  h3 {
+    font-size: 1.8rem;
+  }
+}
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 1.5rem;
+}
+@media (max-width: 500px) {
+  h4 {
+    font-size: 1.2rem;
+  }
 }
 
 a {
@@ -55,16 +75,11 @@ img {
 }
 
 section {
-  padding: 100px 0;
-}
-@media (max-width: 786px) {
-  section {
-    padding: 70px 0;
-  }
+  padding: 70px 0;
 }
 @media (max-width: 500px) {
   section {
-    padding: 25px 0;
+    padding: 50px 0;
   }
 }
 
@@ -277,8 +292,8 @@ nav {
   .navbar .nav-list {
     display: flex;
     align-items: flex-start;
-    width: 90%;
     margin: auto;
+    margin-left: 2rem;
     list-style-type: none;
     flex-direction: column;
     padding-top: 2rem;
@@ -294,10 +309,10 @@ nav {
   .navbar .navbar-collapse {
     position: absolute;
     flex-direction: column;
-    top: 100px;
+    top: 80px;
     height: 100%;
     left: 0;
-    width: 100vw;
+    width: 50vw;
     height: 100vh;
     background-color: var(--white-color);
     transform: translateX(-1000px);
@@ -376,12 +391,26 @@ nav {
   transform: translateY(3px);
   height: 650px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 886px) {
   .hero-content .hero-text {
     flex-basis: 100%;
   }
   .hero-content .hero-image {
     display: none;
+  }
+  .hero-content form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  .hero-content form input[type=text] {
+    margin-top: 1rem;
+  }
+  .hero-content form input[type=button] {
+    margin-top: 1rem;
+  }
+  .hero-content form input {
+    margin-right: 0;
   }
 }
 @media (max-width: 500px) {
@@ -393,12 +422,11 @@ nav {
 }
 
 .brands-grid {
-  max-width: 960px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 2rem;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 70px;
 }
 @media (max-width: 768px) {
   .brands-grid {
@@ -413,7 +441,7 @@ nav {
 }
 
 .brand img {
-  width: 100px;
+  width: 130px;
   height: auto;
 }
 
@@ -423,10 +451,11 @@ nav {
   grid-column-gap: 2rem;
   text-align: center;
   justify-items: center;
-  padding-top: 100px;
+  padding-top: 70px;
 }
 .services-grid .service {
-  max-width: 350px;
+  max-width: 300px;
+  margin: 1rem 0;
 }
 @media (max-width: 500px) {
   .services-grid {
@@ -442,8 +471,13 @@ nav {
 }
 
 .section-image img {
-  width: 100%;
+  width: auto;
   max-height: 450px;
+}
+@media (max-width: 500px) {
+  .section-image img {
+    width: 100%;
+  }
 }
 
 .section-cards {
@@ -480,6 +514,9 @@ nav {
   .section-cards {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+  }
+  .section-cards .card {
+    max-width: 100%;
   }
 }
 
