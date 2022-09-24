@@ -26,22 +26,22 @@ p {
 }
 
 h1 {
-  font-size: 62px;
+  font-size: 4rem;
   margin-bottom: 1.5rem;
 }
 
 h2 {
-  font-size: 42px;
+  font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 2rem;
   margin-bottom: 1.5rem;
 }
 
 h4 {
-  font-size: 21px;
+  font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
@@ -62,7 +62,7 @@ section {
     padding: 70px 0;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   section {
     padding: 25px 0;
   }
@@ -76,6 +76,11 @@ section {
   font-size: 16px;
   font-weight: 400;
   color: var(--white-color);
+}
+@media (max-width: 500px) {
+  .btn, .btn-secondary, .btn-primary {
+    width: 100%;
+  }
 }
 
 .btn-primary {
@@ -263,7 +268,12 @@ nav {
   top: 8px;
 }
 
-@media only screen and (max-width: 768px) {
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 960px) {
   .navbar .nav-list {
     display: flex;
     align-items: flex-start;
@@ -322,11 +332,14 @@ nav {
   min-height: 650px;
   padding-top: 8%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   color: var(--white-color);
 }
 .hero-content .hero-text {
   flex-basis: 50%;
+  margin-left: 4rem;
+  max-width: 600px;
 }
 .hero-content .hero-text p {
   color: var(--white-color);
@@ -359,25 +372,23 @@ nav {
   height: 650px;
 }
 .hero-content .hero-image img {
-  position: absolute;
   width: auto;
   transform: translateY(3px);
   height: 650px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .hero-content .hero-text {
     flex-basis: 100%;
-  }
-  .hero-content .hero-text h1 {
-    font-size: 48px;
   }
   .hero-content .hero-image {
     display: none;
   }
 }
-@media (max-width: 425px) {
-  .hero-content .hero-text h1 {
-    font-size: 36px;
+@media (max-width: 500px) {
+  .hero-content .hero-text {
+    text-align: center;
+    margin-left: 0;
+    margin: 0 2rem;
   }
 }
 
@@ -417,9 +428,10 @@ nav {
 .services-grid .service {
   max-width: 350px;
 }
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .services-grid {
-    grid-template-columns: repeat(1fr, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
 }
 
@@ -427,6 +439,11 @@ nav {
   width: 100px;
   height: auto;
   margin-bottom: 1rem;
+}
+
+.section-image img {
+  width: 100%;
+  max-height: 450px;
 }
 
 .section-cards {
