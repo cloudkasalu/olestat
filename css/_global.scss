@@ -79,6 +79,8 @@ section{
     font-weight: 400;
     color: var(--white-color);
 
+    transition: all .2s ease-out;
+
     @include break(500px){
         width: 100%;
     }
@@ -96,6 +98,11 @@ section{
 .btn-none{
     color:var(--black-color);
     background-color: transparent;
+}
+
+.btn-primary:hover{
+    background-color: darken($color: #6425D3, $amount: 5);
+    box-shadow: 2px 4px 12px 2px #6023cadb;
 }
 
 .container{
@@ -179,4 +186,11 @@ section{
         }
 
     }
+}
+
+
+.slick-arrow{
+    position: relative;
+    bottom: 0;
+    
 }

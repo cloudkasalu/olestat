@@ -91,6 +91,7 @@ section {
   font-size: 16px;
   font-weight: 400;
   color: var(--white-color);
+  transition: all 0.2s ease-out;
 }
 @media (max-width: 500px) {
   .btn, .btn-secondary, .btn-primary {
@@ -109,6 +110,11 @@ section {
 .btn-none {
   color: var(--black-color);
   background-color: transparent;
+}
+
+.btn-primary:hover {
+  background-color: #5a21bd;
+  box-shadow: 2px 4px 12px 2px rgba(96, 35, 202, 0.8588235294);
 }
 
 .container {
@@ -187,6 +193,11 @@ section {
   #section-two .section-image {
     order: 1;
   }
+}
+
+.slick-arrow {
+  position: relative;
+  bottom: 0;
 }
 
 .logo {
@@ -659,7 +670,7 @@ footer {
 }
 
 .footer-bottom {
-  padding-top: 2rem;
+  padding-top: 8rem;
   padding-bottom: 0.5rem;
 }
 .footer-bottom ul {
