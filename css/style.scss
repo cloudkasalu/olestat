@@ -186,8 +186,11 @@ nav{
   .hero-content{
     width: 100%;
     height: 100%;
+    max-width: 1440px;
+    margin: auto;
     min-height: 650px;
     padding-top: 8%;
+    padding;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -195,7 +198,6 @@ nav{
 
     .hero-text{
         flex-basis: 50%;
-        margin-left: 4rem;
         max-width: 600px;
         p{
             color: var(--white-color);
