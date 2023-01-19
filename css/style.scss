@@ -212,7 +212,7 @@ nav{
            display: none;
        }
        .navbar-collapse{
-        position: absolute;
+        position: fixed;
         flex-direction: column;
         top: 60px;
         height: 100%;
