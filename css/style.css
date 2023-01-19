@@ -229,7 +229,7 @@ section {
 }
 @media (max-width: 600px) {
   .slick-arrow {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -427,7 +427,7 @@ nav {
     display: none;
   }
   .navbar .navbar-collapse {
-    position: absolute;
+    position: fixed;
     flex-direction: column;
     top: 60px;
     height: 100%;
