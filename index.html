@@ -24,7 +24,7 @@
             <div class="container">
                 <div class="navbar navbar-expand-lg">
                     <div class="logo">
-                        <a class="navbar-brand" href="./index.html"><img src="images/logo.svg"></a> 
+                        <a class="navbar-brand" href="./index.html"><img src="images/logo.svg" width="120px" height="auto" alt="logo"></a> 
                     </div>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -33,8 +33,30 @@
                     <div class="collapse navbar-collapse show" id="navbarNav">
                         <ul class="nav-list ml-auto">
                             <li class="nav-list-item"><a class="nav-link" href="./index.html">Platform</a></li>
-                            <li class="nav-list-item"><a class="nav-link" href="./index.html">Solutions <iconify-icon icon="akar-icons:chevron-down"></iconify-icon></a></li>
-                            <li class="nav-list-item"><a class="nav-link" href="./index.html">Plans <iconify-icon icon="akar-icons:chevron-down"></iconify-icon></a></li>
+                            <li class="nav-list-item dropdown" data-dropdown>
+                                <button class="nav-link" data-dropdown-button >Solutions 
+                                <iconify-icon icon="akar-icons:chevron-down"></iconify-icon></button>
+                                <div class="dropdown-menu">
+                                    <ul class="dropdown-list">
+                                        <div class="dropdown-list-item">dropdown link</div>
+                                        <div class="dropdown-list-item">dropdown link</div>
+                                        <div class="dropdown-list-item">dropdown link</div>
+                                        <div class="dropdown-list-item">dropdown link</div>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-list-item dropdown" data-dropdown >
+                                <button class="nav-link"data-dropdown-button >Plans 
+                                <iconify-icon icon="akar-icons:chevron-down"></iconify-icon></button>
+                                <div class="dropdown-menu">
+                                    <ul class="dropdown-list">
+                                        <div class="dropdown-list-item">dropdown link</div>
+                                        <div class="dropdown-list-item">dropdown link</div>
+                                        <div class="dropdown-list-item">dropdown link</div>
+                                        <div class="dropdown-list-item">dropdown link</div>
+                                    </ul>
+                                </div>
+                            </li>
                             <li class="nav-list-item"><a class="nav-link" href="./index.html">Resources</a></li>
                             <li class="nav-list-item"><a class="nav-link" href="./index.html">Company</a></li>
                         </ul>
@@ -48,7 +70,7 @@
         </nav>
         <header>
             <section id="hero">
-                <div class="">
+                <div class="container">
                     <div class="hero-content">
                         <div class="hero-text">
                             <h1>We Build A Premium Business</h1>
@@ -69,7 +91,7 @@
         <section id="brands">
             <div class="container">
                 <div class="section-header center">
-                    <h2>Trusted Companies from around <br> the world</h2>
+                    <h2>Trusted Companies from around the world</h2>
                     <p>Vulputate molestie molestie amet leo blandit accumsan. Sapien sed amet tellus purus sit odio eget. Diam morbi faucibus vitae neque id urna, sit. Lectus ac.</p>
                 </div>
                 <div class="brands-grid center">
@@ -122,7 +144,7 @@
             <div class="container">
                 <div class="section-content">
                     <div class="section-text">
-                        <h3>Great customer relationship starts here</h3>
+                        <h2>Great customer relationship starts here</h2>
                         <p>Commodo diam vulputate dui proin quis enim nibh. Non integer ac
                              libero facilisis hendrerit a at. Nisi sem ut sed sed faucibus at 
                              eu elit. Morbi aliquam porttitor mattis consequat neque, tellus blandit. </p>
@@ -141,7 +163,7 @@
                         <img src="images/section_image_two-min.png">
                     </div>
                     <div class="section-text">
-                        <h3>The biggest business for your clients</h3>
+                        <h2>The biggest business for your clients</h2>
                         <p>Commodo diam vulputate dui proin quis enim nibh. Non integer ac
                              libero facilisis hendrerit a at. Nisi sem ut sed sed faucibus at 
                              eu elit. Morbi aliquam porttitor mattis consequat neque, tellus blandit. </p>

@@ -8,47 +8,62 @@
 body{
     font-family: 'Archivo', sans-serif;
 }
+h1,h2,h3,h4,h5{
+    font-weight: 500;
+    margin-bottom: .8rem;
+    line-height: 1.2;
+}
 
 p{
     line-height: 1.5;
     font-size: 16px;
     color: var(--gray-color);
     margin-bottom: 1rem;
+
+    @include break(786px){
+        font-size: 15px;
+    }
 }
 
 h1{
-    font-size: 4rem;
-    margin-bottom: 1.5rem;
+    font-size: 60px;
 
-    @include break(500px){
-        font-size: 3.5rem;
+    @include break(786px){
+        font-size: 48px;
+    }
+
+    @include break(480px){
+        font-size: 36px;
     }
 }
 
 h2{
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 36px;
 
-    @include break(500px){
-        font-size: 2rem;
+    @include break(786px){
+        font-size: 32px;
+    }
+    @include break(480px){
+        font-size: 28px;
     }
 
 }
 
 h3{
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    @include break(500px){
-        font-size: 1.8rem;
+    font-size: 32px;
+    @include break(786px){
+        font-size: 28px;
+    }
+    @include break(480px){
+        font-size: 21px;
     }
 
 }
 
 h4{
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    @include break(500px){
-        font-size: 1.2rem;
+    font-size: 21px;
+    @include break(480px){
+        font-size: 18px;
     }
 }
 
@@ -58,7 +73,7 @@ a{
 }
 
 img{
-    width: 100%;
+    max-width: 100%;
 }
 section{
     padding: 70px 0;
@@ -106,9 +121,10 @@ section{
 }
 
 .container{
-    width: 90%;
+    width: 100%;
     height: 100%;
-    max-width: 1440px;
+    padding: 0 1rem;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -188,9 +204,50 @@ section{
     }
 }
 
-
 .slick-arrow{
-    position: relative;
-    bottom: 0;
+    z-index: 99;
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: none;
+    font-size: 16px;
+    @media (max-width:600px) {
+    display: none;
+    }
+
+}
+
+.slick-prev {
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    transform: translateX(-20px);
+    
+}
+
+.slick-next {
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    transform: translateX(20px);
+    
+}
+
+@media (max-width:1200px) {
+    
+}
+
+@media (max-width:1024px) {
+    
+}
+
+@media (max-width:786px) {
+    
+}
+
+
+
+@media (max-width:320px) {
     
 }
